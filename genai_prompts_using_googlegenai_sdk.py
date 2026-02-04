@@ -21,7 +21,7 @@ MODEL_ID = "gemini-2.5-flash"  # @param {type: "string"}
 
 
 
-'''
+
 #be concise
 prompt = "Suggest a name for a flower shop that sells bouquets of dried flowers"
 
@@ -57,10 +57,10 @@ prompt = "What day is it today?"
 
 response = client.models.generate_content(model=MODEL_ID, contents=prompt)
 display(Markdown(response.text))
-'''
 
 
-'''
+
+
 #handling hallucinations - USING system instructions 
 generation_config = GenerateContentConfig(temperature=1.0)
 
@@ -85,11 +85,11 @@ display(Markdown(response.text))
 prompt = "How do I make pizza dough at home?"
 
 response = chat.send_message(prompt)
-display(Markdown(response.text))'''
+display(Markdown(response.text))
 
 
 
-'''
+
 #Generative tasks lead to higher output variability ( so better convert "generate type prompts" to classification prompts)
 prompt = "I'm a high school student. Recommend me a programming activity to improve my skills."
 
@@ -106,7 +106,7 @@ c) learn Fortran
 """
 
 response = client.models.generate_content(model=MODEL_ID, contents=prompt)
-display(Markdown(response.text))'''
+display(Markdown(response.text))
 
 
 
