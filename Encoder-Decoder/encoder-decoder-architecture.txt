@@ -2,5 +2,19 @@
 #predictint next character in a sequence = SEQUENCE MODELING
 Step 1= Split texts into characters as model works at character Level
 Step 2= it assigns unique values to the characters in numbers for example
-Step 3= divide it into input and target - Input=HELLO WORL , target=HELLO WORLD - shifting target and input by 1
+Step 3= divide it into input and target - Input=HELLO WORL , target= ELLO WORLD - shifting target and input by 1
+Step 4= Embedding layer - every ID ( number here ) is converted into a Vector of size - "Embedding dimension" , normally 256 or 1024
+Step 5= GRU layer - reads character one at a time and maintains hidden state(memory) - ( remembers entire sequence context )
+Step 6= Dense Layer - converts the 1024 features into outputs in the same vector feature format
 
+Example - just give example of predicting a word
+
+
+summary - 
+
+Raw Text
+  -
+Split into character
+  -
+Convert characters to numbers
+  -
