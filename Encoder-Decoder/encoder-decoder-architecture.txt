@@ -3,3 +3,4 @@
 Step 1= Split texts into characters as model works at character Level
 Step 2= it assigns unique values to the characters in numbers for example
 Step 3= divide it into input and target - Input=HELLO WORL , target=HELLO WORLD - shifting target and input by 1
+
